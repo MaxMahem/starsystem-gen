@@ -2,7 +2,9 @@ from . import star as GS
 from . import dice as GD
 from .tables import OrbSepTable, StOEccTable
 from .output import latexout
+from .output import xmlout
 LW = latexout.LatexWriter
+XW = xmlout.XmlWriter
 
 class StarSystem:
     roller = GD.DiceRoller()
@@ -232,6 +234,14 @@ class StarSystem:
             writer = LW(self)
         else:
             writer = LW(self, filename)
+        writer.write()
+        
+    def writexml(self):
+#        filename = input("Name of the file (include extension): ")
+#        if filename == '':
+        writer = XW(self)
+#        else:
+#       writer = XW(self, filename)
         writer.write()
 
     def getAge(self):
