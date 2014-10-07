@@ -1,7 +1,6 @@
-"""latexout.py
+"""xmlout.py
 
-Module for saving all the information about a StarSystem to a LaTeX file for
-processing towards a nicely formatted PDF file.
+Module for saving all the information about a StarSystem to a XML file
 """
 
 #from ..starsystem import StarSystem
