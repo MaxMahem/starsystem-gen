@@ -19,4 +19,5 @@ while garden is not True:
 
 mysys.printinfo()
 print('Total number of cycles: {}'.format(cyclenum))
-mysys.writelatex()
+# mysys.writelatex()
+mysys.writexml()
